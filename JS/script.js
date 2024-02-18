@@ -1,5 +1,5 @@
 const button = document.getElementById("btn");
 
 button.addEventListener("click", () => {
-  window.open("hehe");
+  window.open("hehe.html");
 });
