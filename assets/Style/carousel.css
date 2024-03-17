@@ -1,0 +1,48 @@
+#carouselExampleIndicators {
+    width: 100%;
+    background-color: #424141;
+}
+  
+.carousel-inner {
+    height: 430px;
+}
+  
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: white; 
+}
+
+.carousel-control-prev{
+    margin-left: -55px;
+}
+
+.carousel-control-next{
+    margin-right: -48px;
+}
+
+.custom-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+  
+.indicator {
+    width: 50px;
+    height: 2px;
+    background-color: #bbb;
+    margin: 0 10px;
+    cursor: pointer;
+}
+  
+.indicator.active {
+    background-color: #fff;
+}
+
+.carousel-item img {
+    opacity: 0.6;
+}
+  
+  
+  

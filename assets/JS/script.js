@@ -124,3 +124,18 @@ newButtonLarge.addEventListener("click", () => {
       : "rotate(0deg)";
   }
 });
+
+// for custom indicator's slide change in carousel
+document.addEventListener('DOMContentLoaded', function () {
+  const indicators = document.querySelectorAll('.indicator');
+  const carousel = document.querySelector('#carouselExampleIndicators');
+
+  carousel.addEventListener('slide.bs.carousel', function (event) {
+    const index = event.to;
+    indicators.forEach(indicator => indicator.classList.remove('active'));
+    indicators[index].classList.add('active');
+  });
+});
+
+
+
