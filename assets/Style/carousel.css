@@ -6,7 +6,8 @@
 }
   
 .carousel-inner {
-    height: 430px;
+    height: 641px;
+    /* height: 430px; */
 }
   
 .carousel-control-prev-icon,
@@ -46,5 +47,29 @@
     opacity: 0.6;
 }
   
-  
+.welcome-text .brand-text{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    z-index: 1; 
+    text-align: center;
+    color: white; 
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+
+.welcome-text p {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    z-index: 1; 
+    text-align: center;
+    color: white; 
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
   
