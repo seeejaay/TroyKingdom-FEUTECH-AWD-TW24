@@ -1,0 +1,42 @@
+.promotion {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    height: 400px;
+}
+
+.promotion .promotion-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    text-align: center;
+    color: white;
+}
+
+.promotion .promotion-text h1 {
+    font-size: 5vw;
+    letter-spacing: 0.5vw;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.promotion .promotion-text p {
+    font-size: 1.5vw;
+    letter-spacing: 0.2vw;
+    font-weight: 500;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.promotion section {
+    position: relative;
+}
+
+.promotion section img {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
