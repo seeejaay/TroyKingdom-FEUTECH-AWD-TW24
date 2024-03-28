@@ -124,20 +124,3 @@ newButtonLarge.addEventListener("click", () => {
       : "rotate(0deg)";
   }
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-  const indicators = document.querySelectorAll('.indicator');
-  const carousel = document.querySelector('#carouselExampleIndicators');
-
-  // for custom indicator's slide change in carousel
-  carousel.addEventListener('slide.bs.carousel', function (event) {
-    const index = event.to;
-    indicators.forEach(indicator => indicator.classList.remove('active'));
-    indicators[index].classList.add('active');
-  });
-
-  // automatic carousel slide change
-  setInterval(() => {
-    carousel.querySelector('.carousel-control-next').click(); 
-  }, 3500);
-});
