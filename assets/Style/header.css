@@ -1,18 +1,9 @@
 /*FEEL FREE TO CHANGE  THE FONT AND COLORS*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box !important;
-  transition: 300ms ease !important;
+  transition: all 300ms ease;
   font-family: "Poppins", sans-serif;
-  --darkred: #220c10;
-  --greencyan: #506c64;
-  --mediumcyan: #77cbb9;
-  --cyanblue: #75b8c8;
-  --lightcyanblue: #cdd3d5;
 }
-
 /*Ask Carl if you gonna make changes here or if you can just do it*/
 .navbar {
   position: fixed !important;
@@ -34,7 +25,8 @@
 }
 
 .nav-item {
-  padding: 5px !important;
+  padding: 0 5px 0 5px !important;
+  height: 40px;
 }
 
 .btn-login {
@@ -55,15 +47,18 @@
   }
 }
 
-.fa {
+.i-pos {
   font-family: "Font Awesome 5 Free", sans-serif !important;
-  background: #2c2c2c;
-  border: 1px solid #929294 !important;
   color: #e29d35 !important;
-  font-size: 24px !important;
+  font-size: 16px !important;
+  border: 1px solid #e29d35 !important;
+  width: 40px !important;
+}
+.fa {
+  text-align: center !important;
 }
 
 .img-logo-size {
-  width: 200px !important;
+  width: 40px !important;
   height: auto;
 }
