@@ -21,18 +21,23 @@
 }
 .carousel img {
   width: 100%;
-  min-height: 300px !important;
-  max-height: 500px !important;
-  object-fit: cover;
-  object-position: bottom;
+  height: 500px !important;
+  object-fit: cover !important;
+  object-position: bottom !important;
   filter: brightness(0.6);
 }
 
 .carousel-text {
-  position: absolute;
-  top: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   z-index: 1;
   text-align: center;
   width: clamp(300px, 70vw, 1200px);
   color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
