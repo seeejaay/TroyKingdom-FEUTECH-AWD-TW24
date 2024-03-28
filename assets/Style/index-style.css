@@ -89,6 +89,21 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .explore {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .explore-text {
+    padding: 2rem;
+  }
+
+  .explore img {
+    display: none;
+  }
+}
+
 /*PROMOTION*/
 .promotion {
   position: relative;
@@ -128,7 +143,7 @@
 .promotion section img {
   width: 100%;
   filter: brightness(0.6);
-  height: 500px;
+  height: 420px;
   object-fit: cover;
   object-position: bottom;
 }
@@ -146,7 +161,7 @@
 }
 
 .top-products .top-text h1 {
-  font-size: 4vw;
+  /* font-size: 4vw; */
   letter-spacing: 0.5vw;
   margin-bottom: 1rem;
 }
