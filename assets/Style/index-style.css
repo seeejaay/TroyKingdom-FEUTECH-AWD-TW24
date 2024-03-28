@@ -7,6 +7,7 @@
   transition: 100ms linear;
   font-family: "Poppins", sans-serif;
 }
+
 /*PARENT*/
 .wrapper-main {
   display: flex;
@@ -16,6 +17,7 @@
   width: 100%;
   min-height: 100vh;
 }
+
 /*CAROUSEL*/
 .carousel {
   width: 100%;
@@ -24,6 +26,7 @@
   height: 50%;
   overflow: hidden;
 }
+
 .carousel img {
   width: 100%;
   object-fit: cover !important;
@@ -37,15 +40,29 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 1;
+  z-index: 1; 
   text-align: center;
   width: clamp(600px, 70vw, 1200px);
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 0 4rem;
+  margin: 0 auto;
 }
+
+.carousel .carousel-text h1 {
+  font-size: clamp(4rem, 3vw, 5rem);
+  font-weight: 700;
+  letter-spacing: 0.5vw;
+}
+
+.carousel .carousel-text p {
+  font-weight: 500;
+  width: 100%;
+}
+
 /*EXPLORE*/
 .explore {
   display: flex;
@@ -53,7 +70,7 @@
   align-items: center;
   width: 100%;
   overflow: hidden;
-  height: 411px;
+  /* height: 411px; */
 }
 
 .explore section {
@@ -62,6 +79,7 @@
 
 .explore-text {
   text-align: left;
+  padding: 2rem 0;
 }
 
 .explore img {
@@ -76,27 +94,35 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
+
 .promotion-text {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1; 
+  text-align: center;
   width: clamp(600px, 70vw, 1200px);
+  color: rgba(255, 255, 255, 0.8); 
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  z-index: 1;
+  padding: 0 4rem;
+  margin: 0 auto;
 }
 
 .promotion .promotion-text h1 {
-  font-size: clamp(3rem, 3vw, 5rem);
+  font-size: clamp(4rem, 3vw, 5rem);
   font-weight: 700;
+  letter-spacing: 0.5vw;
 }
 
 .promotion .promotion-text p {
   font-weight: 500;
   width: 100%;
-  margin: 0 auto;
 }
 
 .promotion section img {
