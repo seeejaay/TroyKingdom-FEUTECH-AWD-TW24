@@ -187,9 +187,9 @@
 
 .card {
   transition: transform 0.3s ease-in-out;
-  box-shadow: 0 0px 8px rgb(100, 100, 100);
-  width: 100%;
-  height: 100%;
+  /* box-shadow: 0 0px 8px rgb(100, 100, 100); */
+  width: auto;
+  height: auto;
   overflow: hidden;
   text-align: center;
 }
@@ -201,8 +201,8 @@
 }
 
 .card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0px 15px rgb(255, 3, 171);
+  transform: scale(1.07);
+  /* box-shadow: 0 0px 15px rgb(255, 3, 171); */
 }
 
 .card-img-top {
@@ -211,12 +211,12 @@
 }
 
 .card img {
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .custom-card {
-  max-width: 20rem;
+  max-height: 40rem;
   margin: 0 auto;
 }
