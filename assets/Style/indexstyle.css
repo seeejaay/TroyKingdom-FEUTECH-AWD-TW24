@@ -7,7 +7,7 @@
   transition: 100ms linear;
   font-family: "Poppins", sans-serif;
 }
-
+/*PARENT*/
 .wrapper-main {
   display: flex;
   justify-content: start;
@@ -16,7 +16,7 @@
   width: 100%;
   min-height: 100vh;
 }
-
+/*CAROUSEL*/
 .carousel {
   width: 100%;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
@@ -46,6 +46,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*EXPLORE*/
 .explore {
   display: flex;
   flex-direction: row;
@@ -64,9 +65,52 @@
 }
 
 .explore img {
-  width: 100%;
+  width: 90%;
   max-width: 600px;
   height: auto;
   z-index: 1;
-  padding: 0;
+}
+
+/*PROMOTION*/
+.promotion {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+  height: 420px;
+}
+
+.promotion .promotion-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  text-align: center;
+  color: white;
+}
+
+.promotion .promotion-text h1 {
+  font-size: 5vw;
+  letter-spacing: 0.5vw;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.promotion .promotion-text p {
+  font-size: 1.5vw;
+  letter-spacing: 0.2vw;
+  font-weight: 500;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.promotion section {
+  position: relative;
+}
+
+.promotion section img {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
 }
