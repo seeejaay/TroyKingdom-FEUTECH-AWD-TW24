@@ -39,7 +39,7 @@
   flex-direction: column;
   z-index: 1;
   text-align: center;
-  width: clamp(300px, 70vw, 1200px);
+  width: clamp(600px, 70vw, 1200px);
   color: #fff;
   position: absolute;
   top: 50%;
@@ -76,41 +76,109 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-color: #000;
-  height: 420px;
 }
-
-.promotion .promotion-text {
+.promotion-text {
   position: absolute;
+  width: clamp(600px, 70vw, 1200px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 0;
   text-align: center;
-  color: white;
+  color: #fff;
+  z-index: 1;
 }
 
 .promotion .promotion-text h1 {
-  font-size: 5vw;
-  letter-spacing: 0.5vw;
+  font-size: clamp(3rem, 3vw, 5rem);
   font-weight: 700;
-  margin-bottom: 1rem;
 }
 
 .promotion .promotion-text p {
-  font-size: 1.5vw;
-  letter-spacing: 0.2vw;
   font-weight: 500;
-  max-width: 80%;
+  width: 100%;
   margin: 0 auto;
-}
-
-.promotion section {
-  position: relative;
 }
 
 .promotion section img {
   width: 100%;
-  height: auto;
-  opacity: 0.6;
+  filter: brightness(0.6);
+  height: 500px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/*TOP PRODUCT AND CARDS*/
+.top-products {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-products .top-text {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.top-products .top-text h1 {
+  font-size: 4vw;
+  letter-spacing: 0.5vw;
+  margin-bottom: 1rem;
+}
+
+.top-products .top-text p {
+  letter-spacing: 0.2vw;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.card {
+  overflow: hidden;
+  text-align: center;
+}
+
+.cards {
+  padding: 1rem 0;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0px 8px rgb(54, 54, 54);
+  width: 100%;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0px 15px rgb(255, 3, 171);
+}
+
+.card-img-top {
+  display: block;
+  margin: auto;
+}
+
+.card img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.custom-card {
+  max-width: 20rem;
+  margin: 0 auto;
 }
