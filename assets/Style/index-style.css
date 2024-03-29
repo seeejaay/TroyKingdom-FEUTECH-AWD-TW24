@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 100ms linear;
+  transition: 300ms ease !important;
   font-family: "Poppins", sans-serif;
 }
 
