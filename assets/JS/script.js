@@ -14,6 +14,8 @@ const listgroup = document.querySelectorAll(".l-item");
 const fsize = document.querySelectorAll(".f-size");
 const cardTitle = document.querySelectorAll(".card-title");
 const txtTheme = document.querySelectorAll(".txt-theme");
+const h1Elements = document.getElementsByTagName("h1");
+
 burgerButton.addEventListener("click", () => {
   if (burgerIcon.classList.contains("fa-bars")) {
     burgerIcon.classList.remove("fa-bars");
@@ -54,6 +56,7 @@ newButtonSmall.addEventListener("click", () => {
     btnLogin.style.color = "#d8d6d6";
     card.forEach((c) => c.classList.add("card-dark"));
     txtTheme.forEach((c) => (c.style.color = "#fff"));
+    h1Elements.forEach((h) => (h.style.color = "#fff"));
     listgroup.forEach((lg) => lg.classList.add("list-group-item-dark"));
     cardTitle.forEach((c) => (c.style.color = "#fff"));
     fsize.forEach((f) => f.classList.add("f-size-dark"));
@@ -76,6 +79,7 @@ newButtonSmall.addEventListener("click", () => {
     txtTheme.forEach((c) => (c.style.color = "#000"));
     card.forEach((c) => c.classList.remove("card-dark"));
     cardTitle.forEach((c) => (c.style.color = "#000"));
+    h1Elements.forEach((h) => (h.style.color = "#000"));
     listgroup.forEach((lg) => lg.classList.remove("list-group-item-dark"));
     fsize.forEach((f) => f.classList.remove("f-size-dark"));
     changeThemeS.style.transform = changeThemeS.classList.contains("fa-moon")
@@ -101,6 +105,7 @@ newButtonLarge.addEventListener("click", () => {
     card.forEach((c) => c.classList.add("card-dark"));
     txtTheme.forEach((c) => (c.style.color = "#fff"));
     cardTitle.forEach((c) => (c.style.color = "#fff"));
+    h1Elements.forEach((h) => (h.style.color = "#fff"));
     listgroup.forEach((lg) => lg.classList.add("list-group-item-dark"));
     fsize.forEach((f) => f.classList.add("f-size-dark"));
     changeThemeL.style.transform = changeThemeL.classList.contains("fa-moon")
@@ -119,6 +124,7 @@ newButtonLarge.addEventListener("click", () => {
     navColor.classList.remove("navbar-dark");
     navColor.classList.add("navbar-light");
     btnLogin.style.color = "#000";
+    h1Elements.forEach((h) => (h.style.color = "#000"));
     card.forEach((c) => c.classList.remove("card-dark"));
     cardTitle.forEach((c) => (c.style.color = "#000"));
     txtTheme.forEach((c) => (c.style.color = "#000"));
@@ -128,7 +134,7 @@ newButtonLarge.addEventListener("click", () => {
     changeThemeL.style.transform = changeThemeL.classList.contains("fa-moon")
       ? "rotate(360deg)"
       : "rotate(0deg)";
-    changeThemeL.style.transform = changeThemeL.classList.contains("fa-sum")
+    changeThemeL.style.transform = changeThemeL.classList.contains("fa-sun")
       ? "rotate(360deg)"
       : "rotate(0deg)";
   }
