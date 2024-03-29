@@ -15,12 +15,14 @@
   align-items: center;
   min-height: 100vh;
 }
-.header {
+.header,
+.team {
   width: 100%;
   overflow: hidden;
 }
 
-.header-img img {
+.header-img img,
+.team-img img {
   width: 100%;
   height: 25rem;
   object-fit: cover;
@@ -31,7 +33,7 @@
 .header-text {
   width: 100%;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -39,7 +41,7 @@
   z-index: 1;
 }
 .header-text h1 {
-  font-size: 5rem;
+  font-size: clamp(3rem, 5vw, 5rem);
   font-weight: 700;
 }
 
@@ -70,13 +72,12 @@
   width: 50%;
   text-align: justify;
   padding: 30px;
-  height: 400px;
+
   p {
     padding: 10px;
     font-size: clamp(16px, 1.5vw, 20px);
   }
 }
-
 @media screen and (max-width: 768px) {
   .info-img {
     display: none;
