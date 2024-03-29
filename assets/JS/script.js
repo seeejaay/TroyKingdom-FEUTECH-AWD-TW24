@@ -12,7 +12,8 @@ const btnLogin = document.getElementById("_btnLogin");
 const card = document.querySelectorAll("#_card");
 const listgroup = document.querySelectorAll(".l-item");
 const fsize = document.querySelectorAll(".f-size");
-
+const cardTitle = document.querySelectorAll(".card-title");
+const txtTheme = document.querySelectorAll(".txt-theme");
 burgerButton.addEventListener("click", () => {
   if (burgerIcon.classList.contains("fa-bars")) {
     burgerIcon.classList.remove("fa-bars");
@@ -52,7 +53,9 @@ newButtonSmall.addEventListener("click", () => {
     document.body.style.color = "white";
     btnLogin.style.color = "#d8d6d6";
     card.forEach((c) => c.classList.add("card-dark"));
+    txtTheme.forEach((c) => (c.style.color = "#fff"));
     listgroup.forEach((lg) => lg.classList.add("list-group-item-dark"));
+    cardTitle.forEach((c) => (c.style.color = "#fff"));
     fsize.forEach((f) => f.classList.add("f-size-dark"));
     changeThemeS.style.transform = changeThemeS.classList.contains("fa-moon")
       ? "rotate(360deg)"
@@ -70,7 +73,9 @@ newButtonSmall.addEventListener("click", () => {
     navColor.classList.remove("navbar-dark");
     navColor.classList.add("navbar-light");
     btnLogin.style.color = "#000";
+    txtTheme.forEach((c) => (c.style.color = "#000"));
     card.forEach((c) => c.classList.remove("card-dark"));
+    cardTitle.forEach((c) => (c.style.color = "#000"));
     listgroup.forEach((lg) => lg.classList.remove("list-group-item-dark"));
     fsize.forEach((f) => f.classList.remove("f-size-dark"));
     changeThemeS.style.transform = changeThemeS.classList.contains("fa-moon")
@@ -94,6 +99,8 @@ newButtonLarge.addEventListener("click", () => {
     navColor.classList.add("navbar-dark");
     btnLogin.style.color = "#d8d6d6";
     card.forEach((c) => c.classList.add("card-dark"));
+    txtTheme.forEach((c) => (c.style.color = "#fff"));
+    cardTitle.forEach((c) => (c.style.color = "#fff"));
     listgroup.forEach((lg) => lg.classList.add("list-group-item-dark"));
     fsize.forEach((f) => f.classList.add("f-size-dark"));
     changeThemeL.style.transform = changeThemeL.classList.contains("fa-moon")
@@ -113,6 +120,8 @@ newButtonLarge.addEventListener("click", () => {
     navColor.classList.add("navbar-light");
     btnLogin.style.color = "#000";
     card.forEach((c) => c.classList.remove("card-dark"));
+    cardTitle.forEach((c) => (c.style.color = "#000"));
+    txtTheme.forEach((c) => (c.style.color = "#000"));
     fsize.forEach((f) => f.classList.remove("f-size-dark"));
     listgroup.forEach((lg) => lg.classList.remove("list-group-item-dark"));
 
