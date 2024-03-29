@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 100ms linear;
+  transition: 300ms ease !important;
   font-family: "Poppins", sans-serif;
 }
 
@@ -40,7 +40,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 1; 
+  z-index: 1;
   text-align: center;
   width: clamp(600px, 70vw, 1200px);
   color: rgba(255, 255, 255, 0.8);
@@ -117,10 +117,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 1; 
+  z-index: 1;
   text-align: center;
   width: clamp(600px, 70vw, 1200px);
-  color: rgba(255, 255, 255, 0.8); 
+  color: rgba(255, 255, 255, 0.8);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -153,20 +153,26 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .top-products .top-text {
-  text-align: center;
   padding: 2rem 0;
+  width: clamp(450px, 70vw, 1200px);
 }
 
 .top-products .top-text h1 {
   /* font-size: 4vw; */
+  text-align: center;
   letter-spacing: 0.5vw;
   margin-bottom: 1rem;
 }
 
 .top-products .top-text p {
+  text-align: justify;
   letter-spacing: 0.2vw;
   font-weight: 500;
   margin: 0 auto;
@@ -192,17 +198,18 @@
   height: auto;
   overflow: hidden;
   text-align: center;
+  cursor: pointer;
 }
 
 .card-title {
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 2px;
+  color: #000;
 }
 
 .card img:hover {
-  transform: scale(1.07);
-  transition: 0.5s ease-in-out;
+  transform: scale(1.07) rotate(10deg);
   /* box-shadow: 0 0px 15px rgb(255, 3, 171); */
 }
 
@@ -220,4 +227,9 @@
 .custom-card {
   max-height: 40rem;
   margin: 0 auto;
+  background-color: transparent !important;
+}
+
+.txt-theme {
+  color: #000;
 }
