@@ -1,15 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const cartButton = document.getElementById('_btnCartL');
-    const cartWindow = document.getElementById('cartWindow');
+const cartL = document.getElementById("_btnCartL");
+const cartS = document.getElementById("_btnCartS");
 
-    cartButton.addEventListener('click', function() {
-        cartWindow.classList.toggle('active');
-    });
+const cartWindow = document.getElementById("_cartWindow");
 
-    // Close cart window if clicked outside
-    document.addEventListener('click', function(event) {
-        if (!cartWindow.contains(event.target) && event.target !== cartButton) {
-            cartWindow.classList.remove('active');
-        }
-    });
+cartL.addEventListener("click", () => {
+  if (cartWindow.classList.contains("active")) {
+    cartWindow.classList.remove("active");
+  } else {
+    cartWindow.classList.add("active");
+  }
+});
+cartS.addEventListener("click", () => {
+  if (cartWindow.classList.contains("active")) {
+    cartWindow.classList.remove("active");
+  } else {
+    cartWindow.classList.add("active");
+  }
 });
