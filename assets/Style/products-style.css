@@ -1,10 +1,9 @@
 /* CAROUSEL */
-body {
+.wrapper {
     padding-top: 3rem; /* white space on top */
     padding-bottom: 3rem;
     color: rgb(var(--bs-tertiary-color-rgb));
-    overflow-x: hidden; /* hide horizontal scrollbar */
-    max-width: 100%;    /* hide horizontal scrollbar */
+    width: 100%;    /* hide horizontal scrollbar */
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -246,7 +245,7 @@ button:hover span {
 /*categories */
       
 .carousel-indicators img{
-    width: 70px;
+    width: 100%;
     display: block;
 }
 .carousel-indicators button{
@@ -258,24 +257,30 @@ button:hover span {
 
 .categ-text {
     position: absolute;
-    top: 58%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
+    display: flex; /* Add this line */
+    justify-content: center; /* Add this line */
+    align-items: center; /* Add this line */
 }
 
 .categ-text h1 {
-    font-size: 4.5rem;
+    font-size: clamp(2.5rem, 7vw, 9rem);
     color: #fff;
     font-weight: 700;
 }
 
 .img-indi {
-    width: 100px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust as needed */
+    max-width: 200px;
     height: 100px; /* Adjust as needed */
     object-fit: cover; /* This will ensure that the aspect ratio of the images is maintained */
-
 }
 
 .carousel-control-prev, .carousel-control-next {
