@@ -155,3 +155,37 @@ changeLarge.addEventListener("click", () => {
     txtTheme.forEach((c) => (c.style.color = "#000"));
   }
 });
+
+//POPUP
+document.addEventListener('DOMContentLoaded', function () {
+  const signinButton = document.getElementById('_btnLogin');
+  const signupButton = document.querySelector('.btn-signup');
+  const signinPopup = document.getElementById('signinPopup');
+  const signupPopup = document.getElementById('signupPopup');
+  const signinCloseBtn = document.getElementById('signinCloseBtn');
+  const signupCloseBtn = document.getElementById('signupCloseBtn');
+
+  // SHOW SIGN-IN POPUP
+  signinButton.addEventListener('click', function () {
+      signinPopup.style.display = 'block';
+  });
+
+  // SHOW SIGN-UP POPUP
+  signupButton.addEventListener('click', function () {
+      signupPopup.style.display = 'block';
+  });
+
+  // CLOSE BUTTON FOR SIGN-IN POPUP
+  signinCloseBtn.addEventListener('click', function () {
+      signinPopup.style.display = 'none';
+  });
+
+  // CLOSE BUTTON FOR SIGN-UP POPUP
+  signupCloseBtn.addEventListener('click', function () {
+      signupPopup.style.display = 'none';
+  });
+});
+
+
+
+
