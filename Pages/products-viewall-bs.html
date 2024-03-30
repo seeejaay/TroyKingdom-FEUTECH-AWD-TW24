@@ -26,8 +26,69 @@
       type="text/css"
       href="../assets/Style/products-style.css"
     />
+    <link rel="stylesheet" href="../assets/Style/header.css" />
   </head>
   <body>
+    <header class="w-100">
+        <nav class="navbar navbar-expand-lg shadow p-2 w-100" id="_navColor">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                class="img-logo-size"
+                src="../assets/images/logo.webp"
+                alt="logo here"
+              />
+            </a>
+  
+            <div class="d-flex">
+              <button
+                class="navbar-toggler"
+                id="burgerButton"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars hamburger" id="_hamburger"></i>
+              </button>
+  
+              <button id="_changeThemeConS" type="button" class="btn i-pos">
+                <i class="fas fa-moon fa" id="_changeThemeS"></i>
+              </button>
+            </div>
+  
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" id="_home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="_about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" id="_products">Products</a>
+                </li>
+                <li class="nav-item">
+                  <button class="btn btn-login" id="_btnLogin">Sign In</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn btn-signup">Sign Up</button>
+                </li>
+                <li class="nav-item">
+                  <button id="_changeThemeConL" type="button" class="btn i-pos">
+                    <i class="fas fa-moon fa" id="_changeThemeL"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
     <!--HEADER-->
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-inner">
@@ -722,5 +783,12 @@
         </main>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/JS/script.js"></script>
+    <script src="../assets/JS/script-products.js"></script>
   </body>
 </html>
