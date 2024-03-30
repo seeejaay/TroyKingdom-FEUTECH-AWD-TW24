@@ -16,6 +16,12 @@ const cardTitle = document.querySelectorAll(".card-title");
 const txtTheme = document.querySelectorAll(".txt-theme");
 const h1Elements = document.getElementsByTagName("h1");
 
+const btnCartL = document.getElementById("_btnCartL");
+const btnCartIcon = document.getElementById("_btnCartIconL");
+
+const btnCartS = document.getElementById("_btnCartS");
+const btnCartIconS = document.getElementById("_btnCartIconS");
+
 burgerButton.addEventListener("click", () => {
   if (burgerIcon.classList.contains("fa-bars")) {
     burgerIcon.classList.remove("fa-bars");
@@ -32,9 +38,13 @@ const updateButtonVisibility = () => {
   const win = window;
 
   if (win.innerWidth >= 992) {
+    btnCartL.style.display = "block";
+    btnCartS.style.display = "none";
     newButtonSmall.style.display = "none";
     newButtonLarge.style.display = "block";
   } else {
+    btnCartS.style.display = "block";
+    btnCartL.style.display = "none";
     newButtonSmall.style.display = "block";
     newButtonLarge.style.display = "none";
   }
