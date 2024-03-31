@@ -30,9 +30,35 @@
 }
 
 .cart-body {
-  padding: 10px;
+  width: 100% !important;
 }
 
+.cart-item {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  span {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.quantity {
+  width: 50px !important;
+  text-align: center;
+}
+.quantity-btn {
+  width: 40px !important;
+  margin: 10px;
+  text-align: center;
+}
 .cart-empty {
   text-align: center;
   padding-block: 5px;
