@@ -81,3 +81,17 @@
   .cart-items li .product-name {
     flex-grow: 1;
   }
+
+/* Add styles for the delete button */
+.delete-btn {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #ff6666;
+}
