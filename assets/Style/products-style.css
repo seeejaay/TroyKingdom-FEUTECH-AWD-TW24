@@ -2,280 +2,280 @@
 /* CAROUSEL */
 
 .wrapper {
-    width: 100%; /* hide horizontal scrollbar */
-    transition: all 300ms ease-in-out;
+  width: 100%; /* hide horizontal scrollbar */
+  transition: all 300ms ease-in-out;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 2;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 36rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+.btn-shop {
+  position: relative;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  font-weight: bold;
+  border: 2px solid #428d10;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.btn-shop span {
+  background: #428d10;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+.carousel-item2 {
+  height: 24rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+}
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
   }
-  
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
-    bottom: 3rem;
-    z-index: 2;
-  }
-  
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
-    height: 36rem;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .carousel-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
-  }
-  
-  h1 {
-    font-size: calc(1.375rem + 1.5vw);
-  }
-  
-  .btn-shop {
-    position: relative;
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    font-weight: bold;
-    border: 2px solid #428d10;
-    background: transparent;
-    color: #fff;
-    cursor: pointer;
-    overflow: hidden;
-    text-transform: uppercase;
-  }
-  
-  .btn-shop span {
-    background: #428d10;
-    height: 100%;
-    width: 0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-  }
-  
-  button:hover span {
-    width: 100%;
-  }
-  
-  .carousel-item2 {
-    height: 24rem;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .carousel-item2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
-  }
-  
-  @media (min-width: 40em) {
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-      margin-bottom: 1.25rem;
-      font-size: 1.25rem;
-      line-height: 1.4;
-    }
-  }
-  
-  /* BEST SELLERS */
-  
-  .container {
-    max-width: 1200px;
-  }
-  
-  .pricing-header {
-    max-width: 700px;
-  }
-  
-  .btn-viewall {
-    position: relative;
-    width: 120px;
-    padding: 10px 0;
-    text-align: center;
-    margin: 20px 10px;
-    font-weight: bold;
-    border: 2px solid #428d10;
-    background: transparent;
-    color: #428d10;
-    cursor: pointer;
-    overflow: hidden;
-    text-transform: uppercase;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-  
-  .btn-viewall:hover {
-    background: #428d10;
-    color: #ffffff;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-  
-  .shadow-img {
-    box-shadow: inset 0 0 20px #fe9d03;
-  }
-  
-  .pricing-card-title {
-    color: rgb(196, 19, 19);
-  }
-  
-  .btn-add {
-    position: relative;
-    width: 150px;
-    padding: 10px 0;
-    text-align: center;
-    margin: 20px 10px;
-    font-weight: bold;
-    border: 2px solid #428d10;
-    background: #428d10;
-    color: #fff;
-    cursor: pointer;
-    overflow: hidden;
-    text-transform: uppercase;
-    transition: transform 0.5s;
-    backface-visibility: hidden; /* Prevent blurring on hover */
-  }
-  
-  .btn-add:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 5px #000;
-  }
-  
-  .product-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-  }
-  
-  .btn-add {
-    margin-top: auto; /* Push the button to the bottom */
-  }
-  
-  /* NEW ARRIVALS */
-  .list {
-    transition: 0.5s;
-    background: #181818;
-  }
-  
-  .list:hover {
-    transition: 0.5s;
-    transform: scale(1.05);
-  }
-  
-  .list .items img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-    transition: 0.5s;
-  }
-  
-  .list .items:hover img {
-    filter: blur(5px);
-  }
-  
-  .list .items {
-    color: #c7c3c3;
-    font-family: Poppins;
-    position: relative;
-    transition: 0.5s;
-    display: flex; /* Add this */
-    justify-content: center; /* Add this */
-    align-items: center; /* Add this */
-  }
-  
-  .list .items .content {
-    position: absolute;
-    bottom: 0;
-    color: #fff;
-    padding: 20px;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: 0.5s;
-  }
-  
-  .list .items:hover .content {
-    opacity: 1;
-    transform: translateY(0);
-    z-index: 3;
-  }
-  
-  .list .items::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Change this to your desired color */
-    opacity: 0;
-    transition: opacity 0.5s;
-    z-index: 2; /* Add this */
-  }
-  
-  .list .items:hover::before {
-    opacity: 1;
-  }
-  
-  .pricing-card-new {
-    color: #fff;
-  }
-  
-  /*categories */
-  
-  .carousel-indicators img {
-    width: 100%;
-    display: block;
-  }
-  .carousel-indicators button {
-    width: max-content !important;
-  }
-  .carousel-indicators {
-    position: unset;
-  }
-  
-  .categ-text {
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-    display: flex; /* Add this line */
-    justify-content: center; /* Add this line */
-    align-items: center; /* Add this line */
-  }
-  
-  .categ-text h1 {
-    font-size: clamp(2.5rem, 7vw, 9rem);
-    color: #fff;
-    font-weight: 700;
-  }
-  
-  .img-indi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Adjust as needed */
-    max-width: 200px;
-    height: 100px; /* Adjust as needed */
-    object-fit: cover; /* This will ensure that the aspect ratio of the images is maintained */
-  }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    z-index: 2;
-  }
+}
+
+/* BEST SELLERS */
+
+.container {
+  max-width: 1200px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.btn-viewall {
+  position: relative;
+  width: 120px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 20px 10px;
+  font-weight: bold;
+  border: 2px solid #428d10;
+  background: transparent;
+  color: #428d10;
+  cursor: pointer;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-viewall:hover {
+  background: #428d10;
+  color: #ffffff;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.shadow-img {
+  box-shadow: inset 0 0 20px #fe9d03;
+}
+
+.pricing-card-title {
+  color: rgb(196, 19, 19);
+}
+
+.btn-add {
+  position: relative;
+  width: 150px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 20px 10px;
+  font-weight: bold;
+  border: 2px solid #428d10;
+  background: #428d10;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: transform 0.5s;
+  backface-visibility: hidden; /* Prevent blurring on hover */
+}
+
+.btn-add:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #000;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+.btn-add {
+  margin-top: auto; /* Push the button to the bottom */
+}
+
+/* NEW ARRIVALS */
+.list {
+  transition: 0.5s;
+  background: #181818;
+}
+
+.list:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+.list .items img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.list .items:hover img {
+  filter: blur(5px);
+}
+
+.list .items {
+  color: #c7c3c3;
+  font-family: Poppins;
+  position: relative;
+  transition: 0.5s;
+  display: flex; /* Add this */
+  justify-content: center; /* Add this */
+  align-items: center; /* Add this */
+}
+
+.list .items .content {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.list .items:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 3;
+}
+
+.list .items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Change this to your desired color */
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 2; /* Add this */
+}
+
+.list .items:hover::before {
+  opacity: 1;
+}
+
+.pricing-card-new {
+  color: #fff;
+}
+
+/*categories */
+
+.carousel-indicators img {
+  width: 100%;
+  display: block;
+}
+.carousel-indicators button {
+  width: max-content !important;
+}
+.carousel-indicators {
+  position: unset;
+}
+
+.categ-text {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
+}
+
+.categ-text h1 {
+  font-size: clamp(2.5rem, 7vw, 9rem);
+  color: #fff;
+  font-weight: 700;
+}
+
+.img-indi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Adjust as needed */
+  max-width: 200px;
+  height: 100px; /* Adjust as needed */
+  object-fit: cover; /* This will ensure that the aspect ratio of the images is maintained */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 2;
+
   color: rgb(var(--bs-tertiary-color-rgb));
   width: 100%; /* hide horizontal scrollbar */
 }
@@ -364,12 +364,10 @@ button:hover span {
 
 /* BEST SELLERS */
 .out {
-
 }
 
 .container {
   max-width: 1200px;
-
 }
 
 .pricing-header {
@@ -567,14 +565,14 @@ button:hover span {
   text-decoration: underline;
 } */
 
-.footer-dis{
-	background: #212529;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 55px 50px;
+.footer-dis {
+  background: #212529;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
   list-style: none !important;
 }
 
