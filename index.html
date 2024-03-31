@@ -7,12 +7,9 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>Tipsy Tavern | Home</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/img/KokoNatsu_Logo.png"
-      type="png"
-    />
+    <link rel="shortcut icon" href="./assets/Images/logo.webp" type="png" />
 
+    <link rel="icon" type="image/webp" href="./assets/Images/logo.webp" />
     <link rel="stylesheet" href="./assets/Style/header.css" />
     <link rel="stylesheet" href="./assets/Style/footer.css" />
     <link rel="stylesheet" href="./assets/Style/index-style.css" />
@@ -30,15 +27,16 @@
       crossorigin="anonymous"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body class="">
+    <!-- NAVBAR -->
     <header class="w-100">
       <nav class="navbar navbar-expand-lg shadow p-2 w-100" id="_navColor">
         <div class="container-fluid">
@@ -85,12 +83,7 @@
               <li class="nav-item">
                 <a class="nav-link" id="_products">Products</a>
               </li>
-              <li class="nav-item">
-                <button class="btn btn-login" id="_btnLogin">Sign In</button>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-signup">Sign Up</button>
-              </li>
+
               <li class="nav-item">
                 <button id="_changeThemeConL" type="button" class="btn i-pos">
                   <i class="fas fa-moon fa" id="_changeThemeL"></i>
@@ -101,6 +94,7 @@
         </div>
       </nav>
     </header>
+
     <main class="wrapper-main">
       <!-- CAROUSEL -->
       <div
@@ -230,7 +224,7 @@
                   class="card-img-top img-fluid"
                   alt="Jack Daniels"
                 />
-                <div class="card-body">
+                <div class="card-body txt-theme">
                   <h5 class="card-title">Jack Daniel's Old No.7</h5>
                   <!-- <p class="card-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -246,7 +240,7 @@
                   class="card-img-top img-fluid"
                   alt="bacardi"
                 />
-                <div class="card-body">
+                <div class="card-body txt-theme">
                   <h5 class="card-title">Bacardi Superior Silver Rum</h5>
                   <!-- <p class="card-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -262,7 +256,7 @@
                   class="card-img-top img-fluid"
                   alt="Black Label"
                 />
-                <div class="card-body">
+                <div class="card-body txt-theme">
                   <h5 class="card-title">Johnnie Walker Black Label</h5>
                   <!-- <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -302,52 +296,57 @@
     </footer> -->
 
     <footer class="footer-dis">
+      <div class="footer-left">
+        <img
+          src="../assets/Images/logo.webp"
+          alt="logo"
+          style="max-width: 120px; width: 100%"
+        />
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          <a href="#">About</a>
+          <a href="#">Products</a>
+        </p>
+        <p class="footer-company-name">Tipsy Tavern © 2024</p>
+      </div>
 
-			<div class="footer-left">
-				<img src="../assets/Images/logo.webp" alt="logo" style="max-width: 120px; width: 100%"/>
-				<p class="footer-links">
-					<a href="#" class="link-1">Home</a>
-					<a href="#">About</a>
-					<a href="#">Products</a>
-				</p>
-				<p class="footer-company-name">Tipsy Tavern © 2024</p>
-			</div>
-
-			<div class="footer-center">
+      <div class="footer-center">
         <span>Contact</span>
-				<div>
-					<i class="fa fa-map-marker"></i>
-					<p><span>Espana Boulevard</span> Manila, Philippines</p>
-				</div>
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>+1.555.555.5555</p>
-				</div>
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">tipsytavern@company.com</a></p>
-				</div>
-			</div>
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Espana Boulevard</span> Manila, Philippines</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:support@company.com">tipsytavern@company.com</a>
+          </p>
+        </div>
+      </div>
 
-			<div class="footer-right">
-				<p class="footer-company-about">
-					<span>Products</span>
-					<ul>
-            <li>New Arrivals</li>
-            <li>Best Sellers</li>
-            <li>Categories</li>
-            <li>Specials</li>
-          </ul>
-				</p>
-				<div class="footer-icons">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-					<a href="#"><i class="fa-brands fa-instagram"></i></a>
-					<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-				</div>
-			</div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>Products</span>
+        </p>
+        <ul>
+          <li>New Arrivals</li>
+          <li>Best Sellers</li>
+          <li>Categories</li>
+          <li>Specials</li>
+        </ul>
 
-		</footer>
+        <div class="footer-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </footer>
 
     <script src="./assets/js/script.js"></script>
     <script src="./assets/JS/index.js"></script>
@@ -356,5 +355,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/JS/index.js"></script>
+    <script src="./assets/JS/script.js"></script>
   </body>
 </html>
