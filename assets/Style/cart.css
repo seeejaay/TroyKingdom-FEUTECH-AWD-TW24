@@ -12,7 +12,6 @@
   z-index: 3;
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
 }
 
 .cart-window.active {
@@ -30,7 +29,6 @@
 }
 
 .cart-body {
-  border: 2px solid green;
   width: 100% !important;
 }
 
@@ -41,7 +39,6 @@
   span {
     width: 100%;
     max-width: 800px;
-    border: 2px solid red;
   }
 }
 input::-webkit-outer-spin-button,
