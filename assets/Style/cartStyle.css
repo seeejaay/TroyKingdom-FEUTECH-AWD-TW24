@@ -38,6 +38,13 @@
   border-bottom: 2px solid #ddd;
 }
 
+.cart-empty {
+  text-align: center;
+  padding-block: 5px;
+  font-size: 1.25rem;
+  color: #4a4845;
+}
+
 .cart-footer > div {
     margin-bottom: 10px;
 }
