@@ -233,3 +233,135 @@
 .txt-theme {
   color: #000;
 }
+
+/*POPUP/FORMS*/
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #fff;
+  position: absolute;
+  width: 50%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  z-index: 3;
+}
+
+.popup-content form {
+  display: flex;
+  flex-direction: column; 
+}
+
+.form h1, p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.popup-content form .separator {
+  width: 100%; 
+  height: 1px; 
+  background-color: #333; 
+  margin: 10px 0; 
+  display: block; 
+}
+
+.forgottenBtn {
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  width: auto;
+  height: 45px;
+  border: 1px solid #ccc;
+  margin: 7px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+.forgottenBtn:hover {
+  background-color: #bebdbdbe;
+  transition: ease-in-out 0.2s;
+}
+
+.forgottenBtn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 13px;
+}
+
+.forgottenBtn.fb img {
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+}
+
+.popup-content label {
+  margin-bottom: 10px;
+}
+
+.popup-content input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.popup-content button[type="submit"] {
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 6px auto;
+}
+
+.popup-content button[type="submit"]:hover {
+  background-color: #333;
+}
+
+.popup-container.active {
+  display: flex;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 9px;
+  font-size: 25px;
+  background: none;
+  border: none;
+  color: #000; 
+  cursor: pointer;
+  outline: none;
+  z-index: 4; 
+}
+

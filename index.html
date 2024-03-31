@@ -33,6 +33,7 @@
   </head>
 
   <body class="">
+    <!-- NAVBAR -->
     <header class="w-100">
       <nav class="navbar navbar-expand-lg shadow p-2 w-100" id="_navColor">
         <div class="container-fluid">
@@ -95,6 +96,7 @@
         </div>
       </nav>
     </header>
+
     <main class="wrapper-main">
       <!-- CAROUSEL -->
       <div
@@ -294,6 +296,55 @@
         </div>
       </div>
     </footer>
+
+    <!-- SIGN IN POPUP AND FORM -->
+    <div class="popup-container" id="signinPopup">
+      <div class="popup-content">
+        <button class="close-btn" id="signinCloseBtn">&times;</button>
+          <form id="loginForm" class="form">
+              <h1>WELCOME BACK!</h1>
+              <p>Sign-in to access your account.</p>
+              <input type="text" placeholder="Enter Email or Username" required>
+              <input type="password" placeholder="Enter Password" required>
+              <label>
+                  <input type="checkbox" name="remember"> Remember me
+              </label>
+              <span class="separator"></span>
+              <a href="#" class="link">Forgotten Account?</a>
+              <a class="forgottenBtn" target="_blank" href="https://accounts.google.com/v3/signin/identifier?ifkv=ATuJsjw_gbVD4R88h0Ofp70wv4meIqq5IlBjPiGRee9NhfRFDuQf1VTx6BPjn-8jMWETNSZ3jtz1Bw&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1157516615%3A1710421046811117&theme=glif">
+                <img src="./assets/Images/google.svg" alt="google icon">
+                Sign in with Google
+            </a>
+            <a class="forgottenBtn fb" target="_blank" href="https://www.facebook.com/login/">
+                <img src="./assets/Images/facebook.svg" alt="fb icon">
+                Sign in with Facebook
+            </a>
+              <button type="submit" id="loginSbmt">SIGN IN</button>
+          </form>
+      </div>
+    </div>
+
+    <!-- SIGN UP POPUP AND FORM -->
+    <div class="popup-container" id="signupPopup">
+      <div class="popup-content">
+        <button class="close-btn" id="signupCloseBtn">&times;</button>
+          <form id="signupForm" class="form" required>
+              <h1>JOIN US TODAY!</h1>
+              <p>Sign-up now to become a member.</p>
+              <input type="text" placeholder="First Name" required id="firstBtn">
+              <input type="text" placeholder="Last Name" required id="lastBtn">
+              <input type="email" placeholder="Enter Email" required id="email">
+              <input type="password" placeholder="Enter Password" required id="password">
+              <input type="password" placeholder="Confirm Password" required id="confirmPassword">
+              <label>
+                  <input type="checkbox" required> 
+                  I accept the <span class="link">Terms of Use</span> & <span class="link">Privacy Policy</span>
+              </label>
+              <button type="submit" id="signupSbmt">SIGN UP</button>
+          </form>
+      </div>
+    </div>
+
     <script src="./assets/JS/script.js"></script>
     <script src="./assets/JS/index.js"></script>
     <script
