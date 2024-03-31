@@ -1,8 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 /* CAROUSEL */
+
 .wrapper {
-    color: rgb(var(--bs-tertiary-color-rgb));
     width: 100%; /* hide horizontal scrollbar */
+    transition: all 300ms ease-in-out;
   }
   
   /* Since positioning the image, we need to help out the caption */
@@ -88,19 +89,9 @@
   }
   
   /* BEST SELLERS */
-  .out {
-    /* background: url('https://images.unsplash.com/photo-1597290282695-edc43d0e7129?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-      background-size: cover; */
-    background-color: #fff;
-  }
   
   .container {
     max-width: 1200px;
-    background: #fff;
-    /* backdrop-filter: blur(5px); */
-    /* box-shadow: 0 0 50px #000000; */
-    /* background: url('https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlxdW9yfGVufDB8fDB8fHww');
-      background-size: cover; */
   }
   
   .pricing-header {
@@ -306,6 +297,7 @@
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
+  list-style: none !important;
 }
 
 .footer-dis .footer-left,
