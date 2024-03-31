@@ -26,6 +26,7 @@
 
 .cart-window.active {
   right: 0;
+  border: 2px solid red;
 }
 
 .cart-footer {
@@ -40,12 +41,14 @@
 
 .cart-body {
   padding: 10px;
+  border: 2px solid red;
 }
 .cart-empty {
   text-align: center;
   padding-block: 5px;
   font-size: 1.25rem;
   color: #4a4845;
+  border: 2px solid red;
 }
 
 .cart-footer > div {

@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="../assets/Style/header.css" />
     <link rel="stylesheet" href="../assets/Style/footer.css" />
     <link rel="stylesheet" href="../assets/Style/cart.css" />
+    <link rel="stylesheet" href="../assets/Style/checkout.css" />
   </head>
   <body>
     <header class="w-100">
@@ -78,6 +79,9 @@
                 <a class="nav-link active" id="_products">Products</a>
               </li>
               <li class="nav-item">
+                <button class="btn btn-Logout">Log Out</button>
+              </li>
+              <li class="nav-item">
                 <button class="btn btn-cart i-pos" id="_btnCartL">
                   <i class="fas fa-cart-shopping fa" id="_btnCartIconL"></i>
                 </button>
@@ -108,6 +112,9 @@
               our items, awaiting your discerning palate."
             </p>
             <h1>Behold, our Crowned Jewels</h1>
+            <button class="shop btn-shop" type="button">
+              <span></span>SHOP NOW
+            </button>
           </div>
         </div>
       </div>
@@ -124,9 +131,13 @@
               >
                 <h1 class="display-4 fw-normal">All Items</h1>
               </div>
-              <div
-                class="col d-flex justify-content-end align-items-center"
-              ></div>
+              <div class="col d-flex justify-content-end align-items-center">
+                <a href="../Pages/products-viewall-bs.html"
+                  ><button class="shop btn-viewall" type="button">
+                    <span></span>View All
+                  </button></a
+                >
+              </div>
             </div>
           </div>
         </header>
@@ -777,23 +788,6 @@
       </div>
     </div>
 
-    <!-- <div class="cart-window" id="_cartWindow">
-      <div class="cart-title">
-        <h2>Your Cart</h2>
-      </div>
-      <div class="cart-body">
-        <div class="cart-empty">Your Cart is Empty</div>
-      </div>
-      <div class="cart-footer">
-        <div>
-          <strong>Total</strong>
-          <span class="cart-total">0</span>
-        </div>
-        <button class="cart-clear">Clear Cart</button>
-        <button class="checkout">Checkout</button>
-      </div>
-    </div> -->
-
     <!-- Shopping Cart -->
     <div class="cart-window" id="_cartWindow">
       <div class="cart-title">
@@ -801,17 +795,49 @@
       </div>
       <!-- Cart Items -->
       <div class="cart-body">
-        <ul class="cart-items"></ul>
+        <ul class="cart-items">
+          <!-- Each item in the cart will be represented as an <li> element -->
+        </ul>
       </div>
       <!-- Cart Footer -->
       <div class="cart-footer">
-        <div class="price">
+        <div>
           <strong>Total</strong>
           <span class="cart-total">₱0.00</span>
         </div>
-        <div class="cart-btn">
-          <button class="cart-clear">Clear Cart</button>
-          <button class="checkout">Checkout</button>
+        <button class="cart-clear">Clear Cart</button>
+        <button class="checkout">Checkout</button>
+      </div>
+    </div>
+
+    <!-- Checkout popout -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h2>Please fill the form</h2>
+          <button class="close-btn" id="closeBtn">×</button>
+        </div>
+        <div class="popup-body">
+          <form id="checkoutForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-group">
+              <label for="contact">Contact Number:</label>
+              <input type="text" id="contact" required />
+            </div>
+            <div class="form-group">
+              <label for="address">Address:</label>
+              <input type="text" id="address" required />
+            </div>
+            <div class="form-group">
+              <label for="notes">Notes:</label>
+              <textarea id="notes"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
         </div>
       </div>
     </div>
@@ -849,5 +875,6 @@
     <script src="../assets/JS/script-other.js"></script>
     <script src="../assets/JS/script-products.js"></script>
     <script src="../assets/JS/cart.js"></script>
+    <script src="../assets/JS/checkout.js"></script>
   </body>
 </html>
