@@ -31,7 +31,7 @@
 
 .cart-body {
   width: 100% !important;
-  height: 650px;
+  min-height: 650px;
 }
 
 .cart-item {
@@ -63,18 +63,28 @@ input::-webkit-inner-spin-button {
   font-size: 1.25rem;
   color: #4a4845;
 }
-
-.cart-footer > div {
+.price {
+  width: 100%;
+  padding: 10px 20px;
+}
+.cart-footer {
+  display: grid;
+  place-items: center;
   margin-bottom: 10px;
 }
-
+.cart-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .cart-footer button {
   padding: 10px 20px; /* Padding for the buttons */
   border: none;
   cursor: pointer;
   width: calc(45% - 5px); /* Width of the buttons */
   cursor: pointer;
-  margin-right: 10px;
+  margin: 10px;
 }
 
 .cart-clear {
