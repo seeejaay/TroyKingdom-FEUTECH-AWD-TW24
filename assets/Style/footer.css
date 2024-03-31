@@ -6,6 +6,7 @@
   text-align: left;
   font: bold 16px sans-serif;
   padding: 55px 50px;
+  box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.75);
 }
 .footer-dis ul {
   list-style: none !important;
