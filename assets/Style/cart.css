@@ -1,4 +1,4 @@
-/* Cart window styles */
+  /* Cart window styles */
 .cart-window {
     position: fixed;
     top: 76px;
@@ -70,4 +70,14 @@
     background-color: #ef8d16; /* Button background color */
     color: white; /* Button text color */
   }
+
+  .cart-items li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+  }
   
+  .cart-items li .product-name {
+    flex-grow: 1;
+  }
