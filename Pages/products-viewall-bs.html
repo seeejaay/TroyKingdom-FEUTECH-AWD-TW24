@@ -28,7 +28,7 @@
     />
     <link rel="stylesheet" href="../assets/Style/header.css" />
     <link rel="stylesheet" href="../assets/Style/footer.css" />
-    <link rel="stylesheet" href="../assets/Style/cartStyle.css" />
+    <link rel="stylesheet" href="../assets/Style/cart.css" />
   </head>
   <body>
     <header class="w-100">
@@ -173,11 +173,7 @@
             </div>
             <div class="col mb-3">
               <div class="product-card">
-                <div
-                  class="card mb-4 rounded-3 shadow-img"
-                  id="BacardS_02
-                "
-                >
+                <div class="card mb-4 rounded-3 shadow-img" id="BacardS_02">
                   <div class="card-body">
                     <img
                       src="https://cdn.shopify.com/s/files/1/2141/9909/products/Bacardi_Superior_1_420x.png?v=1591901200"
@@ -791,11 +787,10 @@
       </div>
     </div>
 
-    <div class="cart-window" id="_cartWindow">
+    <!-- <div class="cart-window" id="_cartWindow">
       <div class="cart-title">
         <h2>Your Cart</h2>
       </div>
-      <!-- your cart will go here -->
       <div class="cart-body">
         <div class="cart-empty">Your Cart is Empty</div>
       </div>
@@ -807,8 +802,27 @@
         <button class="cart-clear">Clear Cart</button>
         <button class="checkout">Checkout</button>
       </div>
-    </div>
+    </div> -->
 
+    <!-- Shopping Cart -->
+  <div class="cart-window" id="_cartWindow">
+    <div class="cart-title">
+      <h2>Your Cart</h2>
+    </div>
+    <!-- Cart Items -->
+    <div class="cart-body">
+      <ul class="cart-items"></ul>
+    </div>
+    <!-- Cart Footer -->
+    <div class="cart-footer">
+      <div>
+        <strong>Total</strong>
+        <span class="cart-total">₱0.00</span>
+      </div>
+      <button class="cart-clear">Clear Cart</button>
+      <button class="checkout">Checkout</button>
+    </div>
+  </div>
 
 
 
@@ -844,6 +858,6 @@
     ></script>
     <script src="../assets/JS/script.js"></script>
     <script src="../assets/JS/script-products.js"></script>
-    <script src="../assets/JS/cartScript.js"></script>
+    <script src="../assets/JS/cart.js"></script>
   </body>
 </html>

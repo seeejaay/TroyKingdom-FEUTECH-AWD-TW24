@@ -1,0 +1,73 @@
+/* Cart window styles */
+.cart-window {
+    position: fixed;
+    top: 76px;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cart-window.active {
+    right: 0;
+  }
+  
+  .cart-footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+  }
+  
+  .cart-title {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .cart-body {
+    padding: 10px;
+  }
+  
+  .cart-empty {
+    text-align: center;
+    padding-block: 5px;
+    font-size: 1.25rem;
+    color: #4a4845;
+  }
+  
+  .cart-footer > div {
+    margin-bottom: 10px;
+  }
+  
+  .cart-footer button {
+    padding: 10px 20px; /* Padding for the buttons */
+    border: none;
+    cursor: pointer;
+    width: calc(45% - 5px); /* Width of the buttons */
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .cart-clear {
+    background-color: rgb(41, 40, 40); /* Button background color */
+    color: rgb(238, 215, 215); /* Button text color */
+  }
+  
+  .cart-clear:hover {
+    filter: brightness(1.75);
+  }
+  
+  .checkout:hover {
+    filter: brightness(1.30);
+  }
+  
+  .checkout {
+    background-color: #ef8d16; /* Button background color */
+    color: white; /* Button text color */
+  }
+  

@@ -38,6 +38,9 @@
   border-bottom: 2px solid #ddd;
 }
 
+.cart-body {
+  padding: 10px;
+}
 .cart-empty {
   text-align: center;
   padding-block: 5px;
@@ -55,6 +58,7 @@
     cursor: pointer;
     /* background-color: #4CAF50; Button background color */
     width: calc(45% - 5px); /* Width of the buttons */
+    cursor: pointer;
 }
 
 .cart-clear {
