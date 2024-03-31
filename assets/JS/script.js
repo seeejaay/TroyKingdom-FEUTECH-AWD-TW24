@@ -16,6 +16,12 @@ const btnLogin = document.getElementById("_btnLogin");
 //TEXT
 const txtTheme = document.querySelectorAll(".txt-theme");
 
+const btnCartL = document.getElementById("_btnCartL");
+const btnCartIcon = document.getElementById("_btnCartIconL");
+
+const btnCartS = document.getElementById("_btnCartS");
+const btnCartIconS = document.getElementById("_btnCartIconS");
+
 //BURGER ICON CHANGE
 burgerButton.addEventListener("click", () => {
   if (burgerIcon.classList.contains("fa-bars")) {
@@ -34,11 +40,15 @@ const updateButtonVisibility = () => {
   const win = window;
 
   if (win.innerWidth >= 992) {
-    changeSmall.style.display = "none";
-    changeLarge.style.display = "block";
+    btnCartL.style.display = "block";
+    btnCartS.style.display = "none";
+    newButtonSmall.style.display = "none";
+    newButtonLarge.style.display = "block";
   } else {
-    changeSmall.style.display = "block";
-    changeLarge.style.display = "none";
+    btnCartS.style.display = "block";
+    btnCartL.style.display = "none";
+    newButtonSmall.style.display = "block";
+    newButtonLarge.style.display = "none";
   }
 };
 
