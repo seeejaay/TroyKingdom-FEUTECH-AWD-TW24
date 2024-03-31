@@ -60,6 +60,11 @@
   text-align: center !important;
   padding: 5px;
   margin-left: 10px;
+
+  &:hover {
+    background: #e29d35 !important;
+    color: #fff !important;
+  }
 }
 .fa {
   text-align: center;
