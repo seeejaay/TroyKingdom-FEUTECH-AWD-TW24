@@ -8,7 +8,8 @@
   max-width: 500px;
   background-color: #f9f9f9;
   box-shadow: -5px 0 5px rgba(0, 0, 0, 0.3);
-  padding: 5px;
+  padding: 20px;
+  overflow-y: auto;
   z-index: 3;
   display: flex;
   flex-direction: column;
@@ -19,68 +20,30 @@
 }
 
 .cart-footer {
-  margin-top: auto;
+  margin-top: auto; /* Pushes the footer to the bottom */
 }
 
 .cart-title {
   text-align: center;
-
+  margin-bottom: 20px;
   border-bottom: 2px solid #ddd;
 }
 
 .cart-body {
-  width: 100% !important;
-  height: 670px;
+  padding: 10px;
 }
 
-.cart-item {
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  span {
-    width: 100%;
-    max-width: 800px;
-  }
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-.quantity {
-  width: 50px !important;
-  text-align: center;
-}
-.quantity-btn {
-  width: 40px !important;
-  margin: 10px;
-  text-align: center;
-}
 .cart-empty {
   text-align: center;
-
+  padding-block: 5px;
   font-size: 1.25rem;
   color: #4a4845;
 }
 
-.cart-footer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.cart-footer > div {
+  margin-bottom: 10px;
 }
-.price {
-  width: 100%;
-}
-.cart-btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
+
 .cart-footer button {
   padding: 10px 20px; /* Padding for the buttons */
   border: none;
@@ -106,4 +69,29 @@ input::-webkit-inner-spin-button {
 .checkout {
   background-color: #ef8d16; /* Button background color */
   color: white; /* Button text color */
+}
+
+.cart-items li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.cart-items li .product-name {
+  flex-grow: 1;
+}
+
+/* Add styles for the delete button */
+.delete-btn {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #ff6666;
 }
