@@ -40,13 +40,13 @@ const updateButtonVisibility = () => {
   const win = window;
 
   if (win.innerWidth >= 992) {
-    // btnCartL.style.display = "block";
-    // btnCartS.style.display = "none";
+    btnCartL.style.display = "block";
+    btnCartS.style.display = "none";
     changeSmall.style.display = "none";
     changeLarge.style.display = "block";
   } else {
-    // btnCartS.style.display = "block";
-    // btnCartL.style.display = "none";
+    btnCartS.style.display = "block";
+    btnCartL.style.display = "none";
     changeSmall.style.display = "block";
     changeLarge.style.display = "none";
   }

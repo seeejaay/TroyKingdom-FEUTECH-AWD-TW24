@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (cartItems.hasOwnProperty(productId)) {
         cartItems[productId].quantity++;
         const existingCartItem = cartItemsList.querySelector(
-          `[data-id="${productId}"]`
+          `[ data-id="${productId}"]`
         );
         existingCartItem.querySelector(".quantity").value =
           cartItems[productId].quantity;
@@ -55,11 +55,12 @@ document.addEventListener("DOMContentLoaded", function () {
         totalPrice += productPrice;
 
         const cartItem = document.createElement("li");
+        cartItem.classList.add("cart-item");
         cartItem.dataset.id = productId; // Set data-id attribute to identify the item
         cartItem.innerHTML = `
             <span>${productName} - ₱${productPrice.toFixed(2)}</span>
             <button class="quantity-btn btn-minus">-</button>
-            <input type="number" class="quantity" value="1" min="1">
+            <input type="number" class="quantity" value="1" min="1" width="80px">
             <button class="quantity-btn btn-plus">+</button>
             <button class="delete-btn">x</button> <!-- Added delete button -->
           `;
