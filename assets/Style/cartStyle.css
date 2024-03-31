@@ -33,7 +33,7 @@
 }
 
 .cart-title {
-  text-align: center;s
+  text-align: center;
   margin-bottom: 20px;
   border-bottom: 2px solid #ddd;
 }
@@ -46,7 +46,7 @@
     padding: 10px 20px; /* Padding for the buttons */
     border: none;
     cursor: pointer;
-    /* background-color: #4CAF50; Button background color *//
+    /* background-color: #4CAF50; Button background color */
     width: calc(45% - 5px); /* Width of the buttons */
 }
 
