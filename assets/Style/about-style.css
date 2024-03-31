@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 300ms ease;
+  transition: 300ms ease;
   font-family: "Poppins", sans-serif;
 }
 
@@ -119,6 +119,10 @@
   font-size: 18px;
   width: 100%;
   text-align: center;
+}
+
+.txt-theme {
+  color: #000;
 }
 @media screen and (max-width: 768px) {
   .info-img {
