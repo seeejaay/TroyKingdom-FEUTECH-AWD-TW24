@@ -230,9 +230,12 @@
   background-color: transparent !important;
 }
 
+.explore .txt-theme {
+  text-align: left;
+}
+
 .txt-theme {
   color: #000;
-  text-align: left;
 }
 
 /*POPUP/FORMS*/
