@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let totalPrice = 0;
   let cartItems = {}; // Object to store cart items and their quantities
 
-  // Event listener for cart button
+  // Event listener for cart button large screen
   cartButtonL.addEventListener("click", function () {
     const cartWindow = document.getElementById("_cartWindow");
     if (cartWindow.classList.contains("active")) {
