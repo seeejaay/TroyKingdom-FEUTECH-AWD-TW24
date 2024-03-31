@@ -11,7 +11,6 @@ const changeThemeS = document.getElementById("_changeThemeS");
 const changeThemeL = document.getElementById("_changeThemeL");
 //NAVBAR ELEMENTS
 const navColor = document.getElementById("_navColor");
-const btnLogin = document.getElementById("_btnLogin");
 
 //TEXT
 const txtTheme = document.querySelectorAll(".txt-theme");
@@ -75,7 +74,6 @@ changeSmall.addEventListener("click", () => {
     navColor.classList.add("bg-dark");
     navColor.classList.remove("navbar-light");
     navColor.classList.add("navbar-dark");
-    btnLogin.style.color = "#d8d6d6";
 
     //BODY BACKGROUND
     document.body.style.backgroundColor = "#1F2327";
@@ -100,7 +98,6 @@ changeSmall.addEventListener("click", () => {
     navColor.classList.add("bg-light");
     navColor.classList.remove("navbar-dark");
     navColor.classList.add("navbar-light");
-    btnLogin.style.color = "#000";
 
     // BODY BACKGROUND
     document.body.style.backgroundColor = "white";
@@ -130,7 +127,6 @@ changeLarge.addEventListener("click", () => {
     navColor.classList.add("bg-dark");
     navColor.classList.remove("navbar-light");
     navColor.classList.add("navbar-dark");
-    btnLogin.style.color = "#d8d6d6";
 
     //BODY BACKGROUND
     document.body.style.backgroundColor = "#1F2327";
@@ -155,7 +151,6 @@ changeLarge.addEventListener("click", () => {
     navColor.classList.add("bg-light");
     navColor.classList.remove("navbar-dark");
     navColor.classList.add("navbar-light");
-    btnLogin.style.color = "#000";
 
     //BODY BACKGROUND
     document.body.style.backgroundColor = "white";

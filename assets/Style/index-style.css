@@ -268,20 +268,21 @@
 
 .popup-content form {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
-.form h1, p {
+.form h1,
+p {
   text-align: center;
   margin-bottom: 10px;
 }
 
 .popup-content form .separator {
-  width: 100%; 
-  height: 1px; 
-  background-color: #333; 
-  margin: 10px 0; 
-  display: block; 
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  margin: 10px 0;
+  display: block;
 }
 
 .forgottenBtn {
@@ -363,9 +364,8 @@
   font-size: 25px;
   background: none;
   border: none;
-  color: #000; 
+  color: #000;
   cursor: pointer;
   outline: none;
-  z-index: 4; 
+  z-index: 4;
 }
-
