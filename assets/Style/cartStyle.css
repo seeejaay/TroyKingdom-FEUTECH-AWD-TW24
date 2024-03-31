@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 300ms ease !important;
   font-family: "Poppins", sans-serif;
 }
 
@@ -22,6 +21,7 @@
   z-index: 3;
   display: flex;
   flex-direction: column;
+  transition: 2000ms ease-in-out !important;
 }
 
 .cart-window.active {
@@ -29,7 +29,7 @@
 }
 
 .cart-footer {
-    margin-top: auto; /* Pushes the footer to the bottom */
+  margin-top: auto; /* Pushes the footer to the bottom */
 }
 
 .cart-title {
@@ -49,38 +49,36 @@
 }
 
 .cart-footer > div {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .cart-footer button {
-    padding: 10px 20px; /* Padding for the buttons */
-    border: none;
-    cursor: pointer;
-    /* background-color: #4CAF50; Button background color */
-    width: calc(45% - 5px); /* Width of the buttons */
-    cursor: pointer;
+  padding: 10px 20px; /* Padding for the buttons */
+  border: none;
+  cursor: pointer;
+  /* background-color: #4CAF50; Button background color */
+  width: calc(45% - 5px); /* Width of the buttons */
+  cursor: pointer;
 }
 
 .cart-clear {
-    background-color: rgb(41, 40, 40); /* Button background color */
-    color: rgb(238, 215, 215); /* Button text color */
-
+  background-color: rgb(41, 40, 40); /* Button background color */
+  color: rgb(238, 215, 215); /* Button text color */
 }
 
 .cart-clear:hover {
-    filter: brightness(1.75);
+  filter: brightness(1.75);
 }
 
-.checkout:hover{
-    filter: brightness(1.30);
+.checkout:hover {
+  filter: brightness(1.3);
 }
 
 .checkout {
-    background-color: #ef8d16; /* Button background color */
-    color:white; /* Button text color */
-
+  background-color: #ef8d16; /* Button background color */
+  color: white; /* Button text color */
 }
 
 .cart-footer button {
-    margin-right: 10px;
+  margin-right: 10px;
 }
