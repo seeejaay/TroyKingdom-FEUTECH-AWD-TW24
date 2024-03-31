@@ -55,6 +55,14 @@
 
 }
 
+.cart-clear:hover {
+    filter: brightness(1.75);
+}
+
+.checkout:hover{
+    filter: brightness(1.30);
+}
+
 .checkout {
     background-color: #ef8d16; /* Button background color */
     color:white; /* Button text color */
