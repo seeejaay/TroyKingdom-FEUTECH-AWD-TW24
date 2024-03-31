@@ -78,9 +78,6 @@
                 <a class="nav-link active" id="_products">Products</a>
               </li>
               <li class="nav-item">
-                <button class="btn btn-Logout">Log Out</button>
-              </li>
-              <li class="nav-item">
                 <button class="btn btn-cart i-pos" id="_btnCartL">
                   <i class="fas fa-cart-shopping fa" id="_btnCartIconL"></i>
                 </button>
@@ -111,9 +108,6 @@
               our items, awaiting your discerning palate."
             </p>
             <h1>Behold, our Crowned Jewels</h1>
-            <button class="shop btn-shop" type="button">
-              <span></span>SHOP NOW
-            </button>
           </div>
         </div>
       </div>
@@ -130,13 +124,9 @@
               >
                 <h1 class="display-4 fw-normal">All Items</h1>
               </div>
-              <div class="col d-flex justify-content-end align-items-center">
-                <a href="../Pages/products-viewall-bs.html"
-                  ><button class="shop btn-viewall" type="button">
-                    <span></span>View All
-                  </button></a
-                >
-              </div>
+              <div
+                class="col d-flex justify-content-end align-items-center"
+              ></div>
             </div>
           </div>
         </header>
@@ -815,12 +805,14 @@
       </div>
       <!-- Cart Footer -->
       <div class="cart-footer">
-        <div>
+        <div class="price">
           <strong>Total</strong>
           <span class="cart-total">₱0.00</span>
         </div>
-        <button class="cart-clear">Clear Cart</button>
-        <button class="checkout">Checkout</button>
+        <div class="cart-btn">
+          <button class="cart-clear">Clear Cart</button>
+          <button class="checkout">Checkout</button>
+        </div>
       </div>
     </div>
 
