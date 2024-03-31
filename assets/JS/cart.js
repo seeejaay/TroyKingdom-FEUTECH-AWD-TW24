@@ -97,12 +97,30 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Event listener for clearing the cart
-  clearButton.addEventListener("click", function () {
+  // // Event listener for clearing the cart
+  // clearButton.addEventListener("click", function () {
+  //   cartItemsList.innerHTML = "";
+  //   totalPrice = 0;
+  //   cartItems = {}; // Clear cart items object
+  //   totalPriceElement.innerText = `₱${totalPrice.toFixed(2)}`;
+  // });
+
+  // Event listener for submitting checkout form
+  checkoutForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    // Perform any necessary actions here, such as clearing the cart
     cartItemsList.innerHTML = "";
     totalPrice = 0;
     cartItems = {}; // Clear cart items object
     totalPriceElement.innerText = `₱${totalPrice.toFixed(2)}`;
+    // Close the checkout popup
+    const overlay = document.getElementById('overlay');
+    const popup = document.getElementById('popup');
+    overlay.style.display = 'none';
+    popup.style.display = 'none';
+    // Show the cart window again
+    const cartWindow = document.getElementById('_cartWindow');
+    cartWindow.style.display = 'block';
   });
 
   // Function to update total price
