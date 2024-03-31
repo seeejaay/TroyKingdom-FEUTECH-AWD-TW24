@@ -88,9 +88,11 @@ document.addEventListener("DOMContentLoaded", function () {
       input.value = parseInt(input.value) + 1;
       cartItems[productId].quantity++;
       updateTotalPrice();
-    } else if (target.classList.contains("delete-btn")) { // Handling delete button click
+    } else if (target.classList.contains("delete-btn")) {
+      // Handling delete button click
       const productId = target.parentElement.dataset.id;
-      const itemPrice = cartItems[productId].price * cartItems[productId].quantity;
+      const itemPrice =
+        cartItems[productId].price * cartItems[productId].quantity;
       delete cartItems[productId]; // Remove item from cartItems object
       target.parentElement.remove(); // Remove item from the DOM
       totalPrice -= itemPrice;
@@ -98,13 +100,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // // Event listener for clearing the cart
-  // clearButton.addEventListener("click", function () {
-  //   cartItemsList.innerHTML = "";
-  //   totalPrice = 0;
-  //   cartItems = {}; // Clear cart items object
-  //   totalPriceElement.innerText = `₱${totalPrice.toFixed(2)}`;
-  // });
+  // Event listener for clearing the cart
+  clearButton.addEventListener("click", function () {
+    cartItemsList.innerHTML = "";
+    totalPrice = 0;
+    cartItems = {}; // Clear cart items object
+    totalPriceElement.innerText = `₱${totalPrice.toFixed(2)}`;
+  });
 
   // Event listener for submitting checkout form
   checkoutForm.addEventListener("submit", function (event) {
@@ -115,13 +117,13 @@ document.addEventListener("DOMContentLoaded", function () {
     cartItems = {}; // Clear cart items object
     totalPriceElement.innerText = `₱${totalPrice.toFixed(2)}`;
     // Close the checkout popup
-    const overlay = document.getElementById('overlay');
-    const popup = document.getElementById('popup');
-    overlay.style.display = 'none';
-    popup.style.display = 'none';
+    const overlay = document.getElementById("overlay");
+    const popup = document.getElementById("popup");
+    overlay.style.display = "none";
+    popup.style.display = "none";
     // Show the cart window again
-    const cartWindow = document.getElementById('_cartWindow');
-    cartWindow.style.display = 'block';
+    const cartWindow = document.getElementById("_cartWindow");
+    cartWindow.style.display = "block";
   });
 
   // Function to update total price
