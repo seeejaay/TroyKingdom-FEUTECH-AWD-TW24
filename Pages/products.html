@@ -99,29 +99,12 @@
       </nav>
     </header>
     <main class="wrapper">
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3500"
+      >
         <div class="carousel-inner">
           <div
             class="carousel-item active"
@@ -152,6 +135,9 @@
                 wines, or artisanal spirits, we have something to delight every
                 palate.
               </p>
+              <button class="shop btn-shop" type="button">
+                <span></span>Shop Now
+              </button>
             </div>
           </div>
           <div
@@ -173,24 +159,6 @@
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
       <div class="out">
         <div class="container py-3" style="color: #000">
@@ -241,7 +209,7 @@
                 <div class="col d-flex justify-content-end align-items-center">
                   <a href="../Pages/products-viewall-bs.html"
                     ><button class="shop btn-viewall" type="button">
-                      <span class="txt-theme"> View All</span>
+                      <span>View All</span>
                     </button></a
                   >
                 </div>
@@ -273,11 +241,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱1,571.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱1,571.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme"> Add to cart</span>
+                    <span></span>Add to cart
                   </button>
                 </div>
               </div>
@@ -304,11 +274,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱320.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱320.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme"> Add to cart</span>
+                    <span>Add to cart</span>
                   </button>
                 </div>
               </div>
@@ -335,11 +307,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱1,349.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱1,349.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme">Add to cart</span>
+                    <span> Add to cart</span>
                   </button>
                 </div>
               </div>
@@ -364,11 +338,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱1,049.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱1,049.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme">Add to cart</span>
+                    <span>Add to cart</span>
                   </button>
                 </div>
               </div>
@@ -409,7 +385,7 @@
                 <div class="col d-flex justify-content-end align-items-center">
                   <a href="../Pages/products-viewall-bs.html"
                     ><button class="shop btn-viewall" type="button">
-                      <span class="txt-theme">View All</span>
+                      <span>View All</span>
                     </button></a
                   >
                 </div>
@@ -426,9 +402,7 @@
                       class="img-fluid"
                     />
                     <div class="content">
-                      <h3 class="my-0 fw-bold txt-theme">
-                        Jack Daniel's Old No.7
-                      </h3>
+                      <h3 class="my-0 fw-bold">Jack Daniel's Old No.7</h3>
                       <ul class="list-unstyled mt-3 mb-4 text-white-50">
                         <li>
                           Review : &nbsp;&nbsp;&nbsp;
@@ -666,7 +640,7 @@
                 <div class="col d-flex justify-content-end align-items-center">
                   <a href="../Pages/products-viewall-bs.html"
                     ><button class="shop btn-viewall" type="button">
-                      <span class="txt-theme">View All</span>
+                      <span>View All</span>
                     </button></a
                   >
                 </div>
@@ -696,11 +670,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱13,799.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱13,799.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme">Add to cart</span>
+                    <span>Add to cart</span>
                   </button>
                 </div>
               </div>
@@ -727,11 +703,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱17,299.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱17,299.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme">Add to cart</span>
+                    <span></span>Add to cart
                   </button>
                 </div>
               </div>
@@ -749,7 +727,7 @@
                     Dom Pérignon Vintage 750ml
                   </h3>
                   <ul class="list-unstyled mt-3 mb-4 text-black">
-                    <li class="txt-theme" s>
+                    <li class="txt-theme">
                       Review : &nbsp;&nbsp;&nbsp;
                       <i class="fa fa-star text-warning ml-2"></i>
                       <i class="fa fa-star text-warning ml-2"></i>
@@ -758,11 +736,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱15,999.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱15,999.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme"> Add to cart</span>
+                    <span></span>Add to cart
                   </button>
                 </div>
               </div>
@@ -789,11 +769,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱11,999.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱11,999.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme">Add to cart</span>
+                    <span></span>Add to cart
                   </button>
                 </div>
               </div>

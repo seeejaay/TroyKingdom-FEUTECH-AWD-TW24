@@ -126,7 +126,7 @@ button:hover span {
 }
 
 .pricing-card-title {
-  color: rgb(196, 19, 19);
+  color: #000;
 }
 
 .btn-add {
@@ -395,10 +395,6 @@ button:hover span {
 
 .shadow-img {
   box-shadow: inset 0 0 20px #fe9d03;
-}
-
-.pricing-card-title {
-  color: rgb(196, 19, 19);
 }
 
 .btn-add {
