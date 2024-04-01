@@ -236,6 +236,8 @@
 
 .explore .txt-theme {
   text-align: left;
+  padding: 0 2rem;
+  line-height: 2;
 }
 
 .txt-theme {
