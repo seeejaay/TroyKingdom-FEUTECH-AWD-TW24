@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 300ms ease !important;
+  font-family: "Poppins", sans-serif;
+  --yellow: #ffa30a;
+  --lightyellow: #ffeed3;
+  --dark: #212529;
+}
+
+/*PARENT*/
+.wrapper-main {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/*CAROUSEL*/
+.carousel {
+  width: 100%;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+  background: #fff;
+  height: 50%;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  object-fit: cover !important;
+  height: 500px !important;
+  object-position: bottom !important;
+  filter: brightness(0.6);
+}
+
+.carousel-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.carousel .carousel-text h1 {
+  font-size: clamp(2rem, 3vw, 5rem);
+  font-weight: 700;
+  letter-spacing: 0.5vw;
+}
+
+.carousel .carousel-text p {
+  font-weight: 500;
+  width: 100%;
+  max-width: 800px;
+}
+
+/*EXPLORE*/
+.explore {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  /* height: 411px; */
+}
+
+.explore section {
+  flex: 0.5;
+}
+
+.explore-text {
+  text-align: left;
+  padding: 2rem 0;
+}
+
+.explore img {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .explore {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .explore-text {
+    padding: 2rem;
+  }
+
+  .explore img {
+    display: none;
+  }
+}
+
+/*PROMOTION*/
+.promotion {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+}
+
+.promotion-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.promotion .promotion-text h1 {
+  font-size: clamp(2rem, 3vw, 5rem);
+  font-weight: 700;
+  letter-spacing: 0.5vw;
+}
+
+.promotion .promotion-text p {
+  font-weight: 500;
+  width: 100%;
+}
+
+.promotion section img {
+  width: 100%;
+  filter: brightness(0.6);
+  height: 420px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/*TOP PRODUCT AND CARDS*/
+.top-products {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-products .top-text {
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.top-products .top-text h1 {
+  /* font-size: 4vw; */
+  text-align: center;
+  letter-spacing: 0.5vw;
+  margin-bottom: 1rem;
+}
+
+.top-products .top-text p {
+  text-align: justify;
+  letter-spacing: 0.2vw;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.cards {
+  padding: 1rem 0;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+  /* box-shadow: 0 0px 8px rgb(100, 100, 100); */
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.card img:hover {
+  transform: scale(1.07) rotate(10deg);
+  /* box-shadow: 0 0px 15px rgb(255, 3, 171); */
+}
+
+.card-img-top {
+  display: block;
+  margin: auto;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-card {
+  max-height: 40rem;
+  margin: 0 auto;
+  background-color: transparent !important;
+}
+
+.explore .txt-theme {
+  text-align: left;
+  padding: 0 2rem;
+  line-height: 2;
+}
+
+.txt-theme {
+  color: #000;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--lightyellow) !important;
+}
+.carousel-indicators .active {
+  background-color: var(--yellow) !important;
+}
