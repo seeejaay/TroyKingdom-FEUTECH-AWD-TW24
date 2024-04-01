@@ -6,6 +6,9 @@
   box-sizing: border-box;
   transition: 300ms ease !important;
   font-family: "Poppins", sans-serif;
+  --yellow: #ffa30a;
+  --lightyellow: #ffeed3;
+  --dark: #212529;
 }
 
 /*PARENT*/
@@ -242,4 +245,11 @@
 
 .txt-theme {
   color: #000;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--lightyellow) !important;
+}
+.carousel-indicators .active {
+  background-color: var(--yellow) !important;
 }
