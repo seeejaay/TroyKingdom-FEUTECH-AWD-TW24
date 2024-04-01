@@ -10,7 +10,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -27,6 +30,7 @@
     <link rel="stylesheet" href="../assets/Style/footer.css" />
     <link rel="stylesheet" href="../assets/Style/cart.css" />
     <link rel="stylesheet" href="../assets/Style/checkout.css" />
+    <!-- this is checkout css-->
   </head>
   <body>
     <header class="w-100">
@@ -75,7 +79,9 @@
               <li class="nav-item">
                 <a class="nav-link active" id="_products">Products</a>
               </li>
-
+              <li class="nav-item">
+                <a class="nav-link" id="_description">Description</a>
+              </li>
               <li class="nav-item">
                 <button class="btn btn-cart i-pos" id="_btnCartL">
                   <i class="fas fa-cart-shopping fa" id="_btnCartIconL"></i>
@@ -129,6 +135,9 @@
                 wines, or artisanal spirits, we have something to delight every
                 palate.
               </p>
+              <button class="shop btn-shop" type="button">
+                <span></span>Shop Now
+              </button>
             </div>
           </div>
           <div
@@ -144,12 +153,15 @@
                 selection of liquors. From rare single malts to small-batch
                 bourbons, there's always something new to discover.
               </p>
+              <button class="shop btn-shop" type="button">
+                <span></span>Learn More
+              </button>
             </div>
           </div>
         </div>
       </div>
       <div class="out">
-        <div class="container py-3" id="myContainer">
+        <div class="container py-3" style="color: #000">
           <header>
             <div class="pricing-header pb-md-4 mx-auto text-center">
               <img
@@ -157,17 +169,33 @@
                 style="width: 100%; max-width: 200px"
               />
               <div class="row">
-                <div class="col-md-3 px-1" id="newArrivalsLink">
-                  <h5 class="txt-theme">NEW ARRIVALS</h5>
+                <div class="col-md-3 px-1">
+                  <h5>
+                    <a href="#newarrivals" class="txt-theme" style="color: #000"
+                      >NEW ARRIVALS</a
+                    >
+                  </h5>
                 </div>
-                <div class="col-md-3 px-1" id="bestSellersLink">
-                  <h5 class="txt-theme">BEST SELLERS</h5>
+                <div class="col-md-3 px-1">
+                  <h5>
+                    <a href="#bestsellers" class="txt-theme" style="color: #000"
+                      >BEST SELLERS</a
+                    >
+                  </h5>
                 </div>
-                <div class="col-md-3 px-1" id="categoriesLink">
-                  <h5 class="txt-theme">CATEGORIES</h5>
+                <div class="col-md-3 px-1">
+                  <h5>
+                    <a href="#categories" class="txt-theme" style="color: #000"
+                      >CATEGORIES</a
+                    >
+                  </h5>
                 </div>
-                <div class="col-md-3 px-1" id="specialsLink">
-                  <h5 class="txt-theme">SPECIALS</h5>
+                <div class="col-md-3 px-1">
+                  <h5>
+                    <a href="#specials" class="txt-theme" style="color: #000"
+                      >SPECIALS</a
+                    >
+                  </h5>
                 </div>
               </div>
             </div>
@@ -181,7 +209,7 @@
                 <div class="col d-flex justify-content-end align-items-center">
                   <a href="../Pages/products-viewall-bs.html"
                     ><button class="shop btn-viewall" type="button">
-                      <span class="txt-theme">View All</span>
+                      <span>View All</span>
                     </button></a
                   >
                 </div>
@@ -203,7 +231,7 @@
                   <h3 class="my-0 fw-bold txt-theme">
                     Jack Daniel's Old No.7 Tennessee Whiskey 1L
                   </h3>
-                  <ul class="list-unstyled mt-3 mb-4">
+                  <ul class="list-unstyled mt-3 mb-4 text-black">
                     <li class="txt-theme">
                       Review : &nbsp;&nbsp;&nbsp;
                       <i class="fa fa-star text-warning ml-2"></i>
@@ -213,11 +241,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱1,571.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱1,571.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme">Add to cart</span>
+                    <span></span>Add to cart
                   </button>
                 </div>
               </div>
@@ -234,7 +264,7 @@
                   <h3 class="my-0 fw-bold txt-theme">
                     Fundador Super Special Brandy 1L
                   </h3>
-                  <ul class="list-unstyled mt-3 mb-4">
+                  <ul class="list-unstyled mt-3 mb-4 text-black">
                     <li class="txt-theme">
                       Review : &nbsp;&nbsp;&nbsp;
                       <i class="fa fa-star text-warning ml-2"></i>
@@ -244,11 +274,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱320.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱320.00
+                      </h3>
                     </li>
                   </ul>
-                  <button class="shop btn-add txt-theme" type="button">
-                    <span class="txt-theme">Add to cart</span>
+                  <button class="shop btn-add" type="button">
+                    <span>Add to cart</span>
                   </button>
                 </div>
               </div>
@@ -265,7 +297,7 @@
                   <h3 class="my-0 fw-bold txt-theme">
                     Johnnie Walker Black Label 700ml
                   </h3>
-                  <ul class="list-unstyled mt-3 mb-4">
+                  <ul class="list-unstyled mt-3 mb-4 text-black">
                     <li class="txt-theme">
                       Review : &nbsp;&nbsp;&nbsp;
                       <i class="fa fa-star text-warning ml-2"></i>
@@ -275,11 +307,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱1,349.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱1,349.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme">Add to cart</span>
+                    <span> Add to cart</span>
                   </button>
                 </div>
               </div>
@@ -294,7 +328,7 @@
                     </div>
                   </div>
                   <h3 class="my-0 fw-bold txt-theme">Bacardi Black 750ml</h3>
-                  <ul class="list-unstyled mt-3 mb-4">
+                  <ul class="list-unstyled mt-3 mb-4 text-black">
                     <li class="txt-theme">
                       Review : &nbsp;&nbsp;&nbsp;
                       <i class="fa fa-star text-warning ml-2"></i>
@@ -304,11 +338,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱1,049.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱1,049.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme">Add to cart</span>
+                    <span>Add to cart</span>
                   </button>
                 </div>
               </div>
@@ -337,7 +373,7 @@
       </div>
 
       <div class="out">
-        <div class="container py-3">
+        <div class="container py-3" style="color: #000">
           <header>
             <div class="pricing pb-md-4 mx-auto text-center" id="bestsellers">
               <div class="row align-items-center">
@@ -349,7 +385,7 @@
                 <div class="col d-flex justify-content-end align-items-center">
                   <a href="../Pages/products-viewall-bs.html"
                     ><button class="shop btn-viewall" type="button">
-                      <span class="txt-theme">View All</span>
+                      <span>View All</span>
                     </button></a
                   >
                 </div>
@@ -366,11 +402,9 @@
                       class="img-fluid"
                     />
                     <div class="content">
-                      <h3 class="my-0 fw-bold txt-theme">
-                        Jack Daniel's Old No.7
-                      </h3>
+                      <h3 class="my-0 fw-bold">Jack Daniel's Old No.7</h3>
                       <ul class="list-unstyled mt-3 mb-4 text-white-50">
-                        <li class="txt-theme">
+                        <li>
                           Review : &nbsp;&nbsp;&nbsp;
                           <i class="fa fa-star text-warning ml-2"></i>
                           <i class="fa fa-star text-warning ml-2"></i>
@@ -379,9 +413,7 @@
                           <i class="fa fa-star ml-2"></i>
                         </li>
                         <li>
-                          <h3 class="card-title pricing-card-new txt-theme">
-                            ₱2000.00
-                          </h3>
+                          <h3 class="card-title pricing-card-new">₱2000.00</h3>
                         </li>
                       </ul>
                     </div>
@@ -399,11 +431,9 @@
                       class="img-fluid"
                     />
                     <div class="content">
-                      <h3 class="my-0 fw-bold txt-theme">
-                        Bacardi Superior Silver Rum
-                      </h3>
+                      <h3 class="my-0 fw-bold">Bacardi Superior Silver Rum</h3>
                       <ul class="list-unstyled mt-3 mb-4 text-white-50">
-                        <li class="txt-theme">
+                        <li>
                           Review : &nbsp;&nbsp;&nbsp;
                           <i class="fa fa-star text-warning ml-2"></i>
                           <i class="fa fa-star text-warning ml-2"></i>
@@ -412,9 +442,7 @@
                           <i class="fa fa-star ml-2"></i>
                         </li>
                         <li>
-                          <h3 class="card-title pricing-card-new txt-theme">
-                            ₱799.00
-                          </h3>
+                          <h3 class="card-title pricing-card-new">₱799.00</h3>
                         </li>
                       </ul>
                     </div>
@@ -429,11 +457,9 @@
                       class="img-fluid"
                     />
                     <div class="content">
-                      <h3 class="my-0 fw-bold txt-theme">
-                        Johnnie Walker Black Label
-                      </h3>
+                      <h3 class="my-0 fw-bold">Johnnie Walker Black Label</h3>
                       <ul class="list-unstyled mt-3 mb-4 text-white-50">
-                        <li class="txt-theme">
+                        <li>
                           Review : &nbsp;&nbsp;&nbsp;
                           <i class="fa fa-star text-warning ml-2"></i>
                           <i class="fa fa-star text-warning ml-2"></i>
@@ -442,9 +468,7 @@
                           <i class="fa fa-star ml-2"></i>
                         </li>
                         <li>
-                          <h3 class="card-title pricing-card-new txt-theme">
-                            ₱1,590.00
-                          </h3>
+                          <h3 class="card-title pricing-card-new">₱1,590.00</h3>
                         </li>
                       </ul>
                     </div>
@@ -603,7 +627,7 @@
       </div>
 
       <div class="out">
-        <div class="container py-3">
+        <div class="container py-3" style="color: #000">
           <header>
             <div class="pricing-header py-5 pb-md-4 mx-auto text-center"></div>
             <div class="pricing pb-md-4 mx-auto text-center" id="specials">
@@ -616,7 +640,7 @@
                 <div class="col d-flex justify-content-end align-items-center">
                   <a href="../Pages/products-viewall-bs.html"
                     ><button class="shop btn-viewall" type="button">
-                      <span class="txt-theme">View All</span>
+                      <span>View All</span>
                     </button></a
                   >
                 </div>
@@ -636,7 +660,7 @@
                     </div>
                   </div>
                   <h3 class="my-0 fw-bold txt-theme">Don Julio 1942 700ml</h3>
-                  <ul class="list-unstyled mt-3 mb-4">
+                  <ul class="list-unstyled mt-3 mb-4 text-black">
                     <li class="txt-theme">
                       Review : &nbsp;&nbsp;&nbsp;
                       <i class="fa fa-star text-warning ml-2"></i>
@@ -646,11 +670,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱13,799.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱13,799.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme">Add to cart</span>
+                    <span>Add to cart</span>
                   </button>
                 </div>
               </div>
@@ -667,7 +693,7 @@
                   <h3 class="my-0 fw-bold txt-theme">
                     Volcan De Mi Tierra X.A 700ml
                   </h3>
-                  <ul class="list-unstyled mt-3 mb-4">
+                  <ul class="list-unstyled mt-3 mb-4 text-black">
                     <li class="txt-theme">
                       Review : &nbsp;&nbsp;&nbsp;
                       <i class="fa fa-star text-warning ml-2"></i>
@@ -677,11 +703,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱17,299.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱17,299.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme">Add to cart</span>
+                    <span></span>Add to cart
                   </button>
                 </div>
               </div>
@@ -698,7 +726,7 @@
                   <h3 class="my-0 fw-bold txt-theme">
                     Dom Pérignon Vintage 750ml
                   </h3>
-                  <ul class="list-unstyled mt-3 mb-4">
+                  <ul class="list-unstyled mt-3 mb-4 text-black">
                     <li class="txt-theme">
                       Review : &nbsp;&nbsp;&nbsp;
                       <i class="fa fa-star text-warning ml-2"></i>
@@ -708,11 +736,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱15,999.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱15,999.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme"> Add to cart</span>
+                    <span></span>Add to cart
                   </button>
                 </div>
               </div>
@@ -729,7 +759,7 @@
                   <h3 class="my-0 fw-bold txt-theme">
                     Highland Park 18yo 700ml
                   </h3>
-                  <ul class="list-unstyled mt-3 mb-4">
+                  <ul class="list-unstyled mt-3 mb-4 text-black">
                     <li class="txt-theme">
                       Review : &nbsp;&nbsp;&nbsp;
                       <i class="fa fa-star text-warning ml-2"></i>
@@ -739,11 +769,13 @@
                       <i class="fa fa-star ml-2"></i>
                     </li>
                     <li>
-                      <h3 class="card-title txt-theme">₱11,999.00</h3>
+                      <h3 class="card-title pricing-card-title txt-theme">
+                        ₱11,999.00
+                      </h3>
                     </li>
                   </ul>
                   <button class="shop btn-add" type="button">
-                    <span class="txt-theme">Add to cart</span>
+                    <span></span>Add to cart
                   </button>
                 </div>
               </div>
@@ -809,6 +841,7 @@
       </div>
     </div>
 
+    <!--FOOTER-->
     <footer class="footer-dis">
       <div class="footer-left">
         <img
@@ -846,7 +879,6 @@
         <p class="footer-company-about">
           <span>Products</span>
         </p>
-
         <ul>
           <li>New Arrivals</li>
           <li>Best Sellers</li>

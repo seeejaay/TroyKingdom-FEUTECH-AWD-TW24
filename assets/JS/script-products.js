@@ -1,6 +1,7 @@
 const openAbout = document.getElementById("_about");
 const openHome = document.getElementById("_home");
 const openProd = document.getElementById("_products");
+const openDesc = document.getElementById("_description");
 openAbout.addEventListener("click", () => {
   window.open("./about.html", "_self");
 });
@@ -9,6 +10,9 @@ openHome.addEventListener("click", () => {
 });
 openProd.addEventListener("click", () => {
   window.open("./products.html", "_self");
+});
+openDesc.addEventListener("click", () => {
+  window.open("./info.html", "_self");
 });
 
 window.onload = function() {
