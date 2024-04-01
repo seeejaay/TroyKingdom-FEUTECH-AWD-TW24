@@ -12,7 +12,10 @@
   list-style: none !important;
   padding: 0;
 }
-
+.footer-dis ul li,
+a {
+  cursor: pointer;
+}
 .footer-dis .footer-left,
 .footer-dis .footer-center,
 .footer-dis .footer-right {

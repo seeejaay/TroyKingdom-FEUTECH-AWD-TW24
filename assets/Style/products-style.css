@@ -285,6 +285,7 @@ button:hover span {
 .carousel-caption {
   bottom: 3rem;
   z-index: 2;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Declare heights because of positioning of img element */
@@ -305,7 +306,8 @@ button:hover span {
 }
 
 h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: clamp(2rem, 3vw, 5rem);
+  font-weight: 700;
 }
 
 .btn-shop {
